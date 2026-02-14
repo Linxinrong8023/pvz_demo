@@ -102,13 +102,11 @@ function updatePlantSkills(state, nowMs) {
         state.hudMessage = "Potato mine armed";
       }
       if (plant.armed) {
-        const hit = state.zombies.find(
-          (zombie) =>
-            zombie.row === plant.row &&
-            zombie.hp > 0 &&
-            zombie.x <= plant.x + 26 &&
-            zombie.x >= plant.x - 30
-        );
+        const hit = state.zombies.find((zombie) => {
+          if (zombie.row !== plant.row || zombie.hp <= 0) return false;
+          const bodyX = zombie.x - BOARD.cellW * 0.16;
+          return Math.abs(bodyX - plant.x) <= BOARD.cellW * 0.52;
+        });
         if (hit) {
           killZombie(state, hit);
           toRemove.add(plant.id);

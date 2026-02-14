@@ -55,8 +55,8 @@ function spawnSkySun(state, nowMs) {
 
 function spawnSunflowerSun(state, plant, nowMs) {
   createSunToken(state, {
-    x: plant.x + (state.rng() - 0.5) * 18,
-    y: plant.y - 10,
+    x: plant.x + (state.rng() - 0.5) * 16,
+    y: plant.y - BOARD.cellH * 0.58,
     value: SUN_RULES.sunflowerValue,
     falling: false,
     createdAtMs: nowMs,
