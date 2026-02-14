@@ -1,0 +1,26 @@
+[
+  {
+    "id": "normal",
+    "name": "普通僵尸",
+    "hp": 270,
+    "speedPxPerSec": 10,
+    "dps": 28,
+    "rewardSun": 0
+  },
+  {
+    "id": "conehead",
+    "name": "路障僵尸",
+    "hp": 640,
+    "speedPxPerSec": 9,
+    "dps": 28,
+    "rewardSun": 0
+  },
+  {
+    "id": "flag",
+    "name": "旗帜僵尸",
+    "hp": 270,
+    "speedPxPerSec": 11,
+    "dps": 30,
+    "rewardSun": 0
+  }
+]

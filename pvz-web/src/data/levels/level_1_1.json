@@ -1,0 +1,31 @@
+{
+  "id": "1-1",
+  "name": "白天草地",
+  "grid": {
+    "rows": 5,
+    "cols": 9
+  },
+  "initialSun": 100,
+  "waves": 10,
+  "musicId": "day_01",
+  "spawnTable": [
+    { "atSec": 15, "row": 2, "type": "normal" },
+    { "atSec": 24, "row": 0, "type": "normal" },
+    { "atSec": 31, "row": 3, "type": "normal" },
+    { "atSec": 40, "row": 1, "type": "normal" },
+    { "atSec": 49, "row": 4, "type": "conehead" },
+    { "atSec": 59, "row": 2, "type": "normal" },
+    { "atSec": 68, "row": 0, "type": "conehead" },
+    { "atSec": 78, "row": 3, "type": "normal" },
+    { "atSec": 88, "row": 1, "type": "conehead" },
+    { "atSec": 96, "row": 4, "type": "normal" },
+    { "atSec": 106, "row": 2, "type": "normal" },
+    { "atSec": 114, "row": 2, "type": "conehead" },
+    { "atSec": 126, "row": 0, "type": "normal" },
+    { "atSec": 134, "row": 4, "type": "conehead" },
+    { "atSec": 144, "row": 1, "type": "normal" },
+    { "atSec": 152, "row": 3, "type": "conehead" },
+    { "atSec": 162, "row": 2, "type": "normal" },
+    { "atSec": 175, "row": 2, "type": "flag", "isFlagWave": true }
+  ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "sunflower",
+    "name": "向日葵",
+    "cost": 50,
+    "cooldownMs": 6000,
+    "hp": 300,
+    "attack": 0,
+    "intervalMs": 17000,
+    "special": "sun"
+  },
+  {
+    "id": "peashooter",
+    "name": "豌豆射手",
+    "cost": 100,
+    "cooldownMs": 6000,
+    "hp": 300,
+    "attack": 20,
+    "intervalMs": 1300,
+    "projectileSpeed": 260,
+    "special": "projectile"
+  },
+  {
+    "id": "wallnut",
+    "name": "坚果墙",
+    "cost": 50,
+    "cooldownMs": 22000,
+    "hp": 4000,
+    "attack": 0,
+    "intervalMs": 0,
+    "special": "block"
+  },
+  {
+    "id": "cherrybomb",
+    "name": "樱桃炸弹",
+    "cost": 150,
+    "cooldownMs": 42000,
+    "hp": 9999,
+    "attack": 9999,
+    "intervalMs": 0,
+    "special": "cherry"
+  },
+  {
+    "id": "potatomine",
+    "name": "土豆雷",
+    "cost": 25,
+    "cooldownMs": 22000,
+    "hp": 300,
+    "attack": 9999,
+    "intervalMs": 0,
+    "armMs": 12000,
+    "special": "mine"
+  }
+]

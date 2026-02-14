@@ -1,0 +1,161 @@
+:root {
+  --bg-deep: #1f2d16;
+  --bg-mid: #335925;
+  --bg-light: #88bf5b;
+  --panel: #f2e7c9;
+  --panel-ink: #302714;
+  --accent: #f6c544;
+  --danger: #bb3e2f;
+  --ok: #3b8f43;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #f6f6f6;
+  background:
+    radial-gradient(900px 500px at 90% -10%, rgba(255, 230, 130, 0.14), transparent 60%),
+    linear-gradient(160deg, #192512, #2e4a22);
+}
+
+.app-shell {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 14px 14px 26px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: clamp(20px, 2.2vw, 28px);
+  letter-spacing: 0.04em;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar-actions button {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(20, 34, 14, 0.76);
+  color: #f4f4f4;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.stage-wrap {
+  position: relative;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.28);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+  background: #223b19;
+}
+
+#game-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: auto;
+  background: #274c1f;
+  position: relative;
+  z-index: 1;
+}
+
+.zombie-gif-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 4;
+  transform-origin: top left;
+}
+
+.plant-gif-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 3;
+  transform-origin: top left;
+}
+
+.plant-gif {
+  position: absolute;
+  display: block;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+  image-rendering: auto;
+  transform: translateZ(0);
+}
+
+.zombie-gif {
+  position: absolute;
+  display: block;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+  image-rendering: auto;
+  transform: translateZ(0);
+}
+
+.overlay-root {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 8;
+}
+
+.hidden {
+  display: none !important;
+}
+
+:fullscreen .app-shell {
+  max-width: none;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+:fullscreen .topbar {
+  display: none;
+}
+
+:fullscreen .stage-wrap {
+  width: 100vw;
+  height: 100vh;
+  max-height: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+:fullscreen #game-canvas {
+  width: 100vw;
+  height: 100vh;
+  max-height: none;
+  margin: 0;
+}
